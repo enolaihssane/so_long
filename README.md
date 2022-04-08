@@ -39,4 +39,3 @@ The player’s goal is to collect all collectibles present on the map then escap
  * [42Paris/minilibx-linux](https://github.com/42Paris/minilibx-linux)
  * [42Docs/minilibx](https://harm-smits.github.io/42docs/libs/minilibx)
  * [taelee42/mlx_example](https://github.com/taelee42/mlx_example)
- * [pret/Disassembly of Pokémon FireRed and LeafGreen](https://github.com/pret/pokefirered)
