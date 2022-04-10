@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 15:05:35 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/08 20:04:37 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/10 22:10:58 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_right(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i][var->j + 1] == 'C')
+	else if (var->na[var->i][var->j + 1] == 'C')
 	{
 		var->na[var->i][var->j + 1] = 'P';
 		var->na[var->i][var->j] = '0';
@@ -39,7 +39,7 @@ void	ft_right(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i][var->j + 1] == 'E' && var->collect == 0)
+	else if (var->na[var->i][var->j + 1] == 'E' && var->collect == 0)
 	{
 		write(1, "==== GOOD GAME ====", 19);
 		mlx_destroy_window(var->mlx, var->win);
@@ -58,7 +58,7 @@ void	ft_up(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i - 1][var->j] == 'C')
+	else if (var->na[var->i - 1][var->j] == 'C')
 	{
 		var->na[var->i - 1][var->j] = 'P';
 		var->na[var->i][var->j] = '0';
@@ -68,7 +68,7 @@ void	ft_up(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i - 1][var->j] == 'E' && var->collect == 0)
+	else if (var->na[var->i - 1][var->j] == 'E' && var->collect == 0)
 	{
 		write(1, "==== GOOD GAME ====", 19);
 		mlx_destroy_window(var->mlx, var->win);
@@ -87,7 +87,7 @@ void	ft_left(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i][var->j - 1] == 'C')
+	else if (var->na[var->i][var->j - 1] == 'C')
 	{
 		var->na[var->i][var->j - 1] = 'P';
 		var->na[var->i][var->j] = '0';
@@ -97,7 +97,7 @@ void	ft_left(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i][var->j - 1] == 'E' && var->collect == 0)
+	else if (var->na[var->i][var->j - 1] == 'E' && var->collect == 0)
 	{
 		write(1, "==== GOOD GAME ====", 19);
 		mlx_destroy_window(var->mlx, var->win);
@@ -116,7 +116,7 @@ void	ft_down(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i + 1][var->j] == 'C')
+	else if (var->na[var->i + 1][var->j] == 'C')
 	{
 		var->na[var->i + 1][var->j] = 'P';
 		var->na[var->i][var->j] = '0';
@@ -126,7 +126,7 @@ void	ft_down(t_so_long *var)
 		ft_putnbr(var->move);
 		ft_putchar('\n');
 	}
-	if (var->na[var->i + 1][var->j] == 'E' && var->collect == 0)
+	else if (var->na[var->i + 1][var->j] == 'E' && var->collect == 0)
 	{
 		write(1, "==== GOOD GAME ====", 19);
 		mlx_destroy_window(var->mlx, var->win);
