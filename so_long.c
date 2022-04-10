@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 16:10:47 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/08 19:56:49 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/10 01:32:54 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,7 @@ int	main(int ac, char **av)
 	if (!var.na[0])
 	{
 		write(1, "E M P T Y   M A P  !!", 21);
-		free(var.na);
-		return (0);
+		exit(0);
 	}
 	rectangular_map(var.na);
 	check_map(var.na);
@@ -78,6 +77,6 @@ int	main(int ac, char **av)
 	xpm_to_image(&var);
 	image_to_window(&var);
 	mlx_hook(var.win, 2, 0, keyhook, &var);
-	mlx_hook(var.win, 17, 0, exit_x, &var);
+	mlx_hook(var.win, 17, 0, exit_x, NULL);
 	mlx_loop(var.mlx);
 }

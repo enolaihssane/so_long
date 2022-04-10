@@ -6,7 +6,7 @@
 #    By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 09:08:18 by ikoukou           #+#    #+#              #
-#    Updated: 2022/04/08 18:07:35 by ikoukou          ###   ########.fr        #
+#    Updated: 2022/04/10 01:33:34 by ikoukou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,17 +23,19 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
+%.o: %.c so_long.h
+	$(CC) $(FLAGS) -c $< -o $@
+
 $(NAME): $(OBJS)
 	$(CC) -lmlx -framework OpenGL -framework AppKit $^ -o $@
 
-%.o: %.c
-	$(CC) $(FLAGS) -c $^ -o $@
 
 clean:
 	rm -rf $(OBJS)
 
-fclean:
-	rm -rf $(NAME) $(OBJS)
+fclean: clean
+	rm -rf $(NAME)
 
-re:
-	fclean all
+re: fclean all
+	
+.PHONY : all clean fclean re
