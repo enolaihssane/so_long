@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 18:00:55 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/08 22:12:17 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/11 01:45:47 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	rectangular_map(char **n)
 		len = ft_strlen(n[j]);
 		if (len_j != len)
 		{
+			write (1, "Error:\n", 8);
 			write (1, "ERROR MAP", 9);
 			exit(0);
 		}

@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 16:10:47 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/10 22:17:46 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/11 01:48:24 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,8 @@ void	ft_check1(int ac, char *av, int fd)
 	}
 	if (fd == -1)
 	{
-		perror("error ");
+		write (1, "Error:\n", 8);
+		write (1, "Opening File failed", 19);
 		exit(0);
 	}
 }

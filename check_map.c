@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 19:17:14 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/10 01:43:50 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/11 01:43:56 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,7 @@ void	check_map(char **n)
 {
 	if (check_walls(n) == 1)
 	{
+		write (1, "Error:\n", 8);
 		write (1, "ERROR WALLS", 11);
 		exit(0);
 	}
