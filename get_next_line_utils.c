@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 16:14:52 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/08 20:09:24 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/12 00:00:41 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ size_t	ft_strlen(char *str)
 	len = 0;
 	if (!str[len])
 		return (0);
-	while (str[len] != '\0' && str[len] != '\n')
+	while (str[len] != '\0')
 	{
 		len++;
 	}

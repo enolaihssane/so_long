@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 19:17:14 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/11 01:43:56 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/12 00:01:07 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	check_wall1(char **n)
 	j = 0;
 	k = 0;
 	l = 0;
-	i = ft_strlen(n[0]);
+	i = ft_strlen1(n[0]);
 	while (n[k] != NULL && n[k][i - 1])
 	{
 		if (n[k][i - 1] != '1')

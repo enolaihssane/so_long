@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 16:11:31 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/10 01:33:59 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/12 00:02:51 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,6 @@ void	ft_down(t_so_long *var);
 void	ft_putchar(char c);
 void	rectangular_map(char **N);
 int		check_walls(char **N);
+size_t	ft_strlen1(char *str);
 
 #endif

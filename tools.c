@@ -6,7 +6,7 @@
 /*   By: ikoukou <ikoukou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 17:17:01 by ikoukou           #+#    #+#             */
-/*   Updated: 2022/04/08 20:27:44 by ikoukou          ###   ########.fr       */
+/*   Updated: 2022/04/12 00:00:49 by ikoukou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,18 @@ void	ft_putnbr(int n)
 	{
 		ft_putchar(nbr + '0');
 	}
+}
+
+size_t	ft_strlen1(char *str)
+{
+	int	len;
+
+	len = 0;
+	if (!str[len])
+		return (0);
+	while (str[len] != '\0' && str[len] != '\n')
+	{
+		len++;
+	}
+	return (len);
 }
